@@ -1,10 +1,9 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
 import java.time.LocalDate;
 
-
-import com.springbootapi.springbootapi.entities.Project;
-import com.springbootapi.springbootapi.entities.Project.Status;
+import com.springbootapi.springbootapi.models.entities.Project;
+import com.springbootapi.springbootapi.models.entities.Project.Status;
 
 public record ProjectResponseDTO(Long id, String description, LocalDate beginDate, LocalDate deliveryDate,
 		Status status, CustomerResponseDTO customer) {

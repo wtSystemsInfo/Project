@@ -1,4 +1,4 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
 /**
  * @author William Toloto

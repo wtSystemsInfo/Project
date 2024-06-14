@@ -1,6 +1,6 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
-import com.springbootapi.springbootapi.entities.TechLeader;
+import com.springbootapi.springbootapi.models.entities.TechLeader;
 
 /**
 * @author William Toloto

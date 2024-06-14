@@ -6,9 +6,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.springbootapi.springbootapi.DTO.CustomerRequestDTO;
-import com.springbootapi.springbootapi.DTO.CustomerResponseDTO;
-import com.springbootapi.springbootapi.entities.Customer;
+
+import com.springbootapi.springbootapi.models.DTO.CustomerRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.CustomerResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Customer;
 import com.springbootapi.springbootapi.repositories.CustomerRepository;
 
 /**

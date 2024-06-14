@@ -18,9 +18,9 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.Collections;
 
-import com.springbootapi.springbootapi.DTO.CustomerRequestDTO;
-import com.springbootapi.springbootapi.DTO.CustomerResponseDTO;
-import com.springbootapi.springbootapi.entities.Customer;
+import com.springbootapi.springbootapi.models.DTO.CustomerRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.CustomerResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Customer;
 import com.springbootapi.springbootapi.repositories.CustomerRepository;
 
 
@@ -105,8 +105,8 @@ public class CustomerServiceTest {
 	        "48744454798",
 	        "joao@gmail.com",
 	        "123456",
-	        "Rua Principal",
-	        "Apt 101",
+	        "87047222",
+	        "1000",
 	        "Próximo ao parque",
 	        "+1234567890"
 	    );
@@ -116,8 +116,8 @@ public class CustomerServiceTest {
 	        "55698633212",
 	        "maria@gmail.com",
 	        "55584", 
-	        "Rua das Flores",
-	        "Casa 10",
+	        "86013060",
+	        "101",
 	        "Próximo à escola",
 	        "+1234567890"
 	    );
@@ -167,9 +167,9 @@ public class CustomerServiceTest {
 	    existingCustomer.setDocId("48744454798");
 	    existingCustomer.setEmail("joao123456@example.com");
 	    existingCustomer.setCityId("123456");
-	    existingCustomer.setPostalCode("123 Main St");
-	    existingCustomer.setHouseNumber("Apt 502");
-	    existingCustomer.setReference("Near the park");
+	    existingCustomer.setPostalCode("86013060");
+	    existingCustomer.setHouseNumber("1370");
+	    existingCustomer.setReference("Perto do Parque");
 	    existingCustomer.setPhone("+1234567890");
 	    
 	    given(repository.findById(id)).willReturn(Optional.of(existingCustomer));
@@ -201,12 +201,12 @@ public class CustomerServiceTest {
 	    Customer existingCustomer = new Customer();
 	    existingCustomer.setId(id);
 	    existingCustomer.setName("João da Silva");
-	    existingCustomer.setDocId("48744454798");
+	    existingCustomer.setDocId("5557");
 	    existingCustomer.setEmail("joao123456@example.com");
 	    existingCustomer.setCityId("123456");
-	    existingCustomer.setPostalCode("123 Main St");
-	    existingCustomer.setHouseNumber("Apt 502");
-	    existingCustomer.setReference("Near the park");
+	    existingCustomer.setPostalCode("86013060");
+	    existingCustomer.setHouseNumber("1370");
+	    existingCustomer.setReference("Perto do Parque");
 	    existingCustomer.setPhone("+1234567890");
 	    
 	    given(repository.findById(id)).willReturn(Optional.of(existingCustomer));
@@ -223,7 +223,7 @@ public class CustomerServiceTest {
 	
 	@DisplayName("JUnit test for deleting an existing customer")
     @Test
-    void testeDeleteExistingCustomer() throws Exception {
+    void testDeleteExistingCustomer() throws Exception {
         // Given
         Long id = 1L;
         Customer existingCustomer = new Customer();
@@ -242,7 +242,7 @@ public class CustomerServiceTest {
 	
 	@DisplayName("JUnit test for deleting a non-existing customer")
     @Test
-    void testeDeleteNonExistingCustomer() throws Exception {
+    void testDeleteNonExistingCustomer() throws Exception {
         // Given
         Long id = 1L;
         

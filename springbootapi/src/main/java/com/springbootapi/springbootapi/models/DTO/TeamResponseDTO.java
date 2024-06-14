@@ -1,6 +1,6 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
-import com.springbootapi.springbootapi.entities.Team;
+import com.springbootapi.springbootapi.models.entities.Team;
 
 
 /*public record TeamResponseDTO(Long id, String description, Long teamMembers, TechLeader techLeader) {

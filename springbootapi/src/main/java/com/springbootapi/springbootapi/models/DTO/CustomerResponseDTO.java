@@ -1,6 +1,6 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
-import com.springbootapi.springbootapi.entities.Customer;
+import com.springbootapi.springbootapi.models.entities.Customer;
 
 /**
 * @author William Toloto

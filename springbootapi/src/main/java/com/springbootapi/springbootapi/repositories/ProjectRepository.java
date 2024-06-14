@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.springbootapi.springbootapi.entities.Project;
-import com.springbootapi.springbootapi.entities.Project.Status;
+import com.springbootapi.springbootapi.models.entities.Project;
+import com.springbootapi.springbootapi.models.entities.Project.Status;
 
 /**
  * @author William Toloto

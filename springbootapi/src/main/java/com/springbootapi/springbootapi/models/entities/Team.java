@@ -1,8 +1,8 @@
-package com.springbootapi.springbootapi.entities;
+package com.springbootapi.springbootapi.models.entities;
 
-import java.time.LocalDate;
 
-import com.springbootapi.springbootapi.DTO.ProjectRequestDTO;
+
+import com.springbootapi.springbootapi.models.DTO.TeamRequestDTO;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,44 +17,35 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 /**
  * @author William Toloto
  */
 
-//Implementação da entidade Projeto 
+//Implementação da entidade Time
 
-@Table(name = "project")
-@Entity(name = "project")
+@Table(name = "team")
+@Entity(name = "team")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Project {
-	
-	public enum Status{
-		ABERTO,
-		FECHADO
-	}
-
+public class Team {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String description;
-	private LocalDate beginDate;
-	private LocalDate deliveryDate;
-	private Status status; 
+	private Long teamMembers;
 	
 	@OneToOne
-    @JoinColumn(name = "idCustomer")
-	private Customer customer;
+    @JoinColumn(name = "idTechLeader")
+	private TechLeader techLeader;	
 	
-	
-	public Project(ProjectRequestDTO data) {
+	public Team(TeamRequestDTO data) {
 		this.description = data.description();
-		this.beginDate = data.beginDate();
-		this.deliveryDate = data.deliveryDate();
-		this.status = data.status();
-		this.customer = data.customer();
+		this.teamMembers = data.teamMembers();
+		this.techLeader = data.techLeader();
+		
 	}
 }

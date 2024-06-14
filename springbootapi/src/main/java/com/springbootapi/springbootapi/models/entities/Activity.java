@@ -1,8 +1,8 @@
-package com.springbootapi.springbootapi.entities;
+package com.springbootapi.springbootapi.models.entities;
 
 import java.time.LocalDate;
 
-import com.springbootapi.springbootapi.DTO.ActivityRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.ActivityRequestDTO;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

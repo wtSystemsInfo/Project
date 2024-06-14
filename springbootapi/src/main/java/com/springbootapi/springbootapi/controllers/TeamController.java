@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootapi.springbootapi.DTO.TeamRequestDTO;
-import com.springbootapi.springbootapi.DTO.TeamResponseDTO;
-import com.springbootapi.springbootapi.entities.Team;
+import com.springbootapi.springbootapi.models.DTO.TeamRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.TeamResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Team;
 import com.springbootapi.springbootapi.services.TeamService;
 
 /**

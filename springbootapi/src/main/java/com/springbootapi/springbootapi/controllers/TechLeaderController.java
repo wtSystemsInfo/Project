@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootapi.springbootapi.DTO.TechLeaderRequestDTO;
-import com.springbootapi.springbootapi.DTO.TechLeaderResponseDTO;
-import com.springbootapi.springbootapi.entities.TechLeader;
+import com.springbootapi.springbootapi.models.DTO.TechLeaderRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.TechLeaderResponseDTO;
+import com.springbootapi.springbootapi.models.entities.TechLeader;
 import com.springbootapi.springbootapi.services.TechLeaderService;
 
 /**

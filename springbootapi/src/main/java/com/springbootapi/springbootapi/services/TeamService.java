@@ -7,10 +7,10 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbootapi.springbootapi.DTO.TeamRequestDTO;
-import com.springbootapi.springbootapi.DTO.TeamResponseDTO;
-import com.springbootapi.springbootapi.entities.Team;
-import com.springbootapi.springbootapi.entities.TechLeader;
+import com.springbootapi.springbootapi.models.DTO.TeamRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.TeamResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Team;
+import com.springbootapi.springbootapi.models.entities.TechLeader;
 import com.springbootapi.springbootapi.repositories.TeamRepository;
 
 /**

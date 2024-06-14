@@ -1,6 +1,6 @@
-package com.springbootapi.springbootapi.entities;
+package com.springbootapi.springbootapi.models.entities;
 
-import com.springbootapi.springbootapi.DTO.CustomerRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.CustomerRequestDTO;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,9 +1,9 @@
-package com.springbootapi.springbootapi.DTO;
+package com.springbootapi.springbootapi.models.DTO;
 
 import java.time.LocalDate;
 
-import com.springbootapi.springbootapi.entities.Activity;
-import com.springbootapi.springbootapi.entities.Activity.StatusActivity;
+import com.springbootapi.springbootapi.models.entities.Activity;
+import com.springbootapi.springbootapi.models.entities.Activity.StatusActivity;
 
 
 public record ActivityResponseDTO(Long id, String description, StatusActivity status, LocalDate deadLineDate,

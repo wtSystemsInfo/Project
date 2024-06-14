@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootapi.springbootapi.DTO.CustomerRequestDTO;
-import com.springbootapi.springbootapi.DTO.CustomerResponseDTO;
-import com.springbootapi.springbootapi.entities.Customer;
+import com.springbootapi.springbootapi.models.DTO.CustomerRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.CustomerResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Customer;
 import com.springbootapi.springbootapi.services.CustomerService;
 
 /**

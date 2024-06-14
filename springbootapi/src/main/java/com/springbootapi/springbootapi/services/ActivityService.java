@@ -10,12 +10,12 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbootapi.springbootapi.DTO.ActivityRequestDTO;
-import com.springbootapi.springbootapi.DTO.ActivityResponseDTO;
-import com.springbootapi.springbootapi.entities.Activity;
-import com.springbootapi.springbootapi.entities.Activity.StatusActivity;
-import com.springbootapi.springbootapi.entities.Project;
-import com.springbootapi.springbootapi.entities.Team;
+import com.springbootapi.springbootapi.models.DTO.ActivityRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.ActivityResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Activity;
+import com.springbootapi.springbootapi.models.entities.Project;
+import com.springbootapi.springbootapi.models.entities.Team;
+import com.springbootapi.springbootapi.models.entities.Activity.StatusActivity;
 import com.springbootapi.springbootapi.repositories.ActivityRepository;
 
 /**
@@ -55,7 +55,7 @@ public class ActivityService {
 
 
 	public Activity findActivityById(Long id) throws Exception {
-		Activity activity= repository.findById(id).orElseThrow(( )-> new Exception("Atividade não encontrado!"));
+		Activity activity= repository.findById(id).orElseThrow(( )-> new Exception("Atividade não encontrada!"));
 		logger.log(Level.INFO, "Atividade id : " + id + " localizado com sucesso!");
 		return activity;
 	}

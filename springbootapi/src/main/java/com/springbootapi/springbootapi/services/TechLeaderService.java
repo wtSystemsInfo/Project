@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbootapi.springbootapi.DTO.TechLeaderRequestDTO;
-import com.springbootapi.springbootapi.DTO.TechLeaderResponseDTO;
-import com.springbootapi.springbootapi.entities.TechLeader;
+import com.springbootapi.springbootapi.models.DTO.TechLeaderRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.TechLeaderResponseDTO;
+import com.springbootapi.springbootapi.models.entities.TechLeader;
 import com.springbootapi.springbootapi.repositories.TechLeaderRepository;
 
 /**

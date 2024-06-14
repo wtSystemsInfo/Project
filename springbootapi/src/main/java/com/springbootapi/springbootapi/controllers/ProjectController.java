@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootapi.springbootapi.DTO.ProjectRequestDTO;
-import com.springbootapi.springbootapi.DTO.ProjectResponseDTO;
-import com.springbootapi.springbootapi.entities.Project;
-import com.springbootapi.springbootapi.entities.Project.Status;
+import com.springbootapi.springbootapi.models.DTO.ProjectRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.ProjectResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Project;
+import com.springbootapi.springbootapi.models.entities.Project.Status;
 import com.springbootapi.springbootapi.services.ProjectService;
 
 /**

@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.springbootapi.springbootapi.entities.Activity;
-import com.springbootapi.springbootapi.entities.Activity.StatusActivity;
+import com.springbootapi.springbootapi.models.entities.Activity;
+import com.springbootapi.springbootapi.models.entities.Activity.StatusActivity;
 
 
 

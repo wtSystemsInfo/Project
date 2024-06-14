@@ -10,11 +10,11 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbootapi.springbootapi.DTO.ProjectRequestDTO;
-import com.springbootapi.springbootapi.DTO.ProjectResponseDTO;
-import com.springbootapi.springbootapi.entities.Customer;
-import com.springbootapi.springbootapi.entities.Project;
-import com.springbootapi.springbootapi.entities.Project.Status;
+import com.springbootapi.springbootapi.models.DTO.ProjectRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.ProjectResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Customer;
+import com.springbootapi.springbootapi.models.entities.Project;
+import com.springbootapi.springbootapi.models.entities.Project.Status;
 import com.springbootapi.springbootapi.repositories.ProjectRepository;
 
 /**

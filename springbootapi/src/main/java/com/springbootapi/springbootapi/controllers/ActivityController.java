@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootapi.springbootapi.DTO.ActivityRequestDTO;
-import com.springbootapi.springbootapi.DTO.ActivityResponseDTO;
-import com.springbootapi.springbootapi.entities.Activity;
-import com.springbootapi.springbootapi.entities.Activity.StatusActivity;
+import com.springbootapi.springbootapi.models.DTO.ActivityRequestDTO;
+import com.springbootapi.springbootapi.models.DTO.ActivityResponseDTO;
+import com.springbootapi.springbootapi.models.entities.Activity;
+import com.springbootapi.springbootapi.models.entities.Activity.StatusActivity;
 import com.springbootapi.springbootapi.services.ActivityService;
 
 /**
